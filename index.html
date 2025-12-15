@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Walkie-Talkie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+       
+
+        <div class="connection-panel">
+            <div class="input-group">
+                <label for="my-id">Your ID:</label>
+                <input type="text" id="my-id" placeholder="Enter your unique ID">
+            </div>
+
+            <div class="input-group">
+                <label for="partner-id">Partner ID:</label>
+                <input type="text" id="partner-id" placeholder="Enter partner's ID">
+            </div>
+
+            <button id="connect-btn">Connect</button>
+            <button id="disconnect-btn" disabled>Disconnect</button>
+        </div>
+
+        <div class="talkie-panel" style="display: none;">
+            <button id="talk-btn" class="talk-button">Hold to Talk</button>
+            <audio id="audio-player" controls></audio>
+        </div>
+
+        <div class="status-panel">
+            <h3>Status:</h3>
+            <div id="status-messages"></div>
+        </div>
+
+
+
+
+
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
